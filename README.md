@@ -1,7 +1,7 @@
 # bgpmap
 
 ### About
-The following scripts create a list of edges from a routers BGP table. Right now the scripts only support MRT format bgp tables, but I'll add support for stripping the AS paths form CLI generated output. 
+The following scripts create a list of edges from a routers BGP table. Right now the scripts only support MRT format BGP tables, but I'll add support for stripping the AS paths from CLI generated output. 
 
 ### Dependencies:
  - parallel
