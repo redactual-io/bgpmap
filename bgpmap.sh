@@ -15,6 +15,8 @@ elif [[ ! -f ${mrt_file} ]]; then
 	help "file does not exist" 		
 elif [[ ${ref_as:-null} == "null" ]]; then
 	help "provide reference ASN of bgp table file"
+elif ! [[ ${ref_as} =~ ^[0-9]+$ ]]; then
+	help "the reference ASN must be a number"
 fi
 #grab the file name without the extension
 fname=$(cut -d . -f1 <<< $mrt_file)
